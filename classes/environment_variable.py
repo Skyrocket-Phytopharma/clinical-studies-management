@@ -5,7 +5,7 @@ import sys
 
 class EnvironmentVariable(object):
     def __init__(self, v, dtype="string", permit_omission=False):
-        load_dotenv('.env')
+        load_dotenv('.env', override=True)
         v2 = os.getenv(v)
         if v2 is None:
             if permit_omission:
