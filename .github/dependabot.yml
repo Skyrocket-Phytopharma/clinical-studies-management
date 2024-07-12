@@ -3,8 +3,9 @@ updates:
 - package-ecosystem: pip
   directory: "/"
   schedule:
-    interval: weekly
-    time: "13:00"
+    interval: "weekly"
+      day: "friday"
+      time: "08:15"
   groups:
     python-packages:
       patterns:
