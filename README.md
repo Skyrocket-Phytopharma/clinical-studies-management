@@ -14,6 +14,10 @@ Manages list of clinical studies.
 
 - Copy the `env.sample` file to `.env` and then populate with required environment variables.
 
+## Package update
+
+- `./update.sh`
+
 ## Running
 
 - `python process.py`
