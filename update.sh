@@ -1,34 +1,40 @@
 #!/bin/bash
 
-# Activate the virtual environment
-source venv/bin/activate
+# Exit on error
+set -e
 
-# Find all outdated packages and write to a file
-pip list --outdated --format=columns > outdated_packages.txt
+# Activate virtual environment
+source .venv/bin/activate
 
-# Initialize a line counter
+# Get outdated packages
+echo "Checking for outdated packages..."
+uv pip list --outdated > outdated_packages.txt
+
+# Initialize line counter
 line_counter=0
 
-# Read the outdated packages file and update each package
+# Loop through outdated packages and upgrade each
 while IFS= read -r line; do
-    # Increment the line counter
     line_counter=$((line_counter + 1))
     
-    # Skip the first two lines
+    # Skip header lines (first two lines of the output)
     if [ "$line_counter" -le 2 ]; then
         continue
     fi
-    
-    # Extract the package name from the line (format: Package Version Latest Type)
+
+    # Extract package name from the line
     package=$(echo "$line" | awk '{print $1}')
-    echo "Updating $package"
-    pip install --upgrade "$package"
+    echo "Updating $package..."
+    uv pip install --upgrade "$package"
 done < outdated_packages.txt
 
-# Clean up the outdated packages file
+# Clean up
 rm outdated_packages.txt
-pip freeze --local > requirements.txt
-# Deactivate the virtual environment
+
+# Export updated packages
+uv pip freeze > requirements.txt
+
+# Deactivate
 deactivate
 
-echo "All packages have been updated."
+echo "All packages have been updated using uv."

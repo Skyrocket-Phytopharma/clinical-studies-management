@@ -2,15 +2,19 @@
 
 Manages list of clinical studies.
 
-## Implementation steps (one-off)
+- Create a virtual environment and activate it:
 
-- Create a virtual environment: `python -m venv venv/`.
+  ```shell
+  uv venv .venv
+  source .venv/bin/activate  # (MacOS)
+  .venv\Scripts\Activate  # (Windows)
+  ```
 
-## Implementation steps (each time the tool is used)
+- Install the required packages:
 
-- Activate the virtual environment (Mac): `source venv/bin/activate`.
-- Activate the virtual environment (Windows): `.\venv\Scripts\activate`.
-- Install necessary Python modules via `pip install -r requirements.txt`.
+  ```shell
+  pip install -r requirements.txt
+  ```
 
 - Copy the `env.sample` file to `.env` and then populate with required environment variables.
 
