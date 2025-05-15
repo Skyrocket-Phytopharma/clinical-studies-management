@@ -13,7 +13,7 @@ Manages list of clinical studies.
 - Install the required packages:
 
   ```shell
-  pip install -r requirements.txt
+  uv pip install -r requirements.txt
   ```
 
 - Copy the `env.sample` file to `.env` and then populate with required environment variables.
