@@ -2,26 +2,31 @@
 
 Manages list of clinical studies.
 
-- Create a virtual environment and activate it:
+---
 
-  ```shell
-  uv venv .venv
-  source .venv/bin/activate  # (MacOS)
-  .venv\Scripts\Activate  # (Windows)
-  ```
+## Prerequisites
 
-- Install the required packages:
+This project uses **uv** for dependency and Python version management. Ensure you have it installed before proceeding.
 
-  ```shell
-  uv pip install -r requirements.txt
-  ```
+## Setup
 
-- Copy the `env.sample` file to `.env` and then populate with required environment variables.
+You no longer need to manually manage virtual environments. The setup is now handled through a unified project synchronisation.
 
-## Package update
+1.  **Sync the environment**
+    Run the following command to create a lockfile and install all required dependencies (such as Pillow) into a managed environment:
 
-- `./update.sh`
+    ```shell
+    uv sync
+    ```
+
+    This should be carried out after a remote `dependabot` update.
+
+2.  **Updating dependencies**
+    If you need to add new packages, use the `add` command instead of editing requirements files manually:
+    ```shell
+    uv add requests
+    ```
 
 ## Running
 
-- `python process.py`
+- `uv run process.py`

@@ -22,8 +22,9 @@ class Processor(object):
 
         self.clinical_studies = []
         self.configure()
-        self.filename = EnvironmentVariable('source_file', 'string', permit_omission=False).value
-        self.copy_to = EnvironmentVariable('copy_to', 'string', permit_omission=True).value
+        self.filename = EnvironmentVariable("source_file", "string", permit_omission=False).value
+        self.do_copy = EnvironmentVariable("do_copy", "boolean", permit_omission=True).value
+        self.copy_to = EnvironmentVariable("copy_to", "string", permit_omission=True).value
         print("\n\nProcessing " + ", ".join(self.realms))
 
     def process(self):
@@ -35,11 +36,12 @@ class Processor(object):
                 authors = sheet_obj.cell(row=row_index, column=1).value
                 title = sheet_obj.cell(row=row_index, column=2).value
                 url = sheet_obj.cell(row=row_index, column=3).value
-                publication = sheet_obj.cell(row=row_index, column=4).value
-                subject = sheet_obj.cell(row=row_index, column=5).value
-                priority = sheet_obj.cell(row=row_index, column=6).value
-                language = sheet_obj.cell(row=row_index, column=7).value
-                year = func.convert_to_int(sheet_obj.cell(row=row_index, column=8).value)
+                status = sheet_obj.cell(row=row_index, column=4).value
+                publication = sheet_obj.cell(row=row_index, column=5).value
+                subject = sheet_obj.cell(row=row_index, column=6).value
+                priority = sheet_obj.cell(row=row_index, column=7).value
+                language = sheet_obj.cell(row=row_index, column=8).value
+                year = func.convert_to_int(sheet_obj.cell(row=row_index, column=9).value)
 
                 process_study = True
                 # Check realm
@@ -59,10 +61,7 @@ class Processor(object):
                     process_study = False
 
                 if process_study:
-                    clinical_study = ClinicalStudy(
-                        authors, title, url, publication,
-                        subject, priority, language, year
-                    )
+                    clinical_study = ClinicalStudy(authors, title, url, publication, subject, priority, language, year)
                     self.clinical_studies.append(clinical_study)
                     print(" - " + clinical_study.title)
 
@@ -96,9 +95,7 @@ class Processor(object):
             csv_data += clinical_study.as_row()
             html_data += clinical_study.as_html()
 
-        html_data = "<div class='clinical_studies'><ol class='clinical_studies'>\n{list_items}</ol></div>".format(
-            list_items=html_data
-        )
+        html_data = "<div class='clinical_studies'><ol class='clinical_studies'>\n{list_items}</ol></div>".format(list_items=html_data)
 
         # Save JSON
         with open(self.json_filename, "w") as file:
@@ -115,6 +112,7 @@ class Processor(object):
         self.copy_json()
 
     def copy_json(self):
-        if "Neuropad" in self.realms:
-            if self.copy_to is not None:
-                copyfile(self.json_filename, os.path.join(self.copy_to, self.json_file))
+        if self.do_copy:
+            if "Neuropad" in self.realms:
+                if self.copy_to is not None:
+                    copyfile(self.json_filename, os.path.join(self.copy_to, self.json_file))
