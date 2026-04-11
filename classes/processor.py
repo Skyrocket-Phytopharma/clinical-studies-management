@@ -36,7 +36,7 @@ class Processor(object):
                 authors = sheet_obj.cell(row=row_index, column=1).value
                 title = sheet_obj.cell(row=row_index, column=2).value
                 url = sheet_obj.cell(row=row_index, column=3).value
-                status = sheet_obj.cell(row=row_index, column=4).value
+                _ = sheet_obj.cell(row=row_index, column=4).value
                 publication = sheet_obj.cell(row=row_index, column=5).value
                 subject = sheet_obj.cell(row=row_index, column=6).value
                 priority = sheet_obj.cell(row=row_index, column=7).value

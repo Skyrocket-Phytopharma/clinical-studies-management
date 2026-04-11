@@ -1,7 +1,7 @@
 def convert_to_int(s):
     try:
         ret = int(s)
-    except:
+    except Exception as _:
         ret = 0
     return ret
 
