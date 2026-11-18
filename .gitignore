@@ -285,4 +285,6 @@ pyrightconfig.json
 .DS_Store
 resources/csv
 resources/html
-resources/json
+# resources/json
+
+resources/source/archive/

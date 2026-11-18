@@ -1,14 +1,14 @@
-import classes.functions as func
+import utils.utils as u
 
 
-class ClinicalStudy(object):
+class ClinicalStudy:
     def __init__(self, authors, title, url, publication, subject, priority, language, year):
         self.author_string = authors
         self.title = title.strip()
         self.url = url.strip()
         self.publication = publication.strip()
         self.subject = subject.strip()
-        self.priority = func.convert_to_int(priority)
+        self.priority = u.convert_to_int(priority)
         self.language = language
         self.year = year
 
@@ -20,16 +20,14 @@ class ClinicalStudy(object):
             self.authors = []
         else:
             self.authors = self.author_string.split(",")
-            for i in range(0, len(self.authors)):
+            for i in range(len(self.authors)):
                 self.authors[i] = self.authors[i].strip()
 
     def get_language_string(self):
         if self.language == "English":
             self.language_string = ""
         else:
-            self.language_string = " (in {language})".format(
-                language=self.language
-            )
+            self.language_string = f" (in {self.language})"
 
     def as_dict(self):
         ret = {
@@ -40,7 +38,7 @@ class ClinicalStudy(object):
             "publication": self.publication,
             "priority": self.priority,
             "language": self.language,
-            "year": self.year
+            "year": self.year,
         }
         return ret
 
@@ -60,19 +58,14 @@ class ClinicalStudy(object):
         return ret
 
     def as_html(self):
-        QUOTE = '"'
-        COMMA = ","
-        NL = "\n"
         authors = ", ".join(self.authors).replace('"', "'")
         ret = "\t<li>"
-        ret += "<span class='authors'>{authors}</span> ".format(
-            authors=authors
-        )
+        ret += f"<span class='authors'>{authors}</span> "
         ret += "<span class='title'><a href='{url}' target='_blank'>{title}{language}{accessibility}</a></span> ".format(
             url=self.url,
             title=self.title,
             language=self.language_string,
-            accessibility='<i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="screen-reader-text"> opens a new window</span>'
+            accessibility='<i class="fas fa-external-link-alt" aria-hidden="true"></i><span class="screen-reader-text"> opens a new window</span>',
         )
         ret += "<span class='publication'>" + self.publication + "</span>"
         ret += "</li>\n"

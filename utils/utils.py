@@ -7,9 +7,7 @@ def convert_to_int(s):
 
 
 def parse(s, divider):
-    if s is None:
-        return None
-    elif s == "":
+    if s is None or s == "":
         return None
     else:
         ret = s.split(divider)

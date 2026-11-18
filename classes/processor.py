@@ -1,47 +1,44 @@
 import os
 import json
 import openpyxl
-from shutil import copyfile
 
 from classes.clinical_study import ClinicalStudy
-from classes.environment_variable import EnvironmentVariable
-import classes.functions as func
+import utils.utils as u
 
 
 class Processor(object):
     def __init__(self, realms=None, priority=None, languages=None, earliest=None, max=10, prefix=None):
-        self.realms = realms
-        self.priority = priority
+        self.realms: list[str] = realms or []
+        self.priority: int | None = priority
         self.languages = languages
         self.earliest = earliest
         self.max = max
         self.prefix = prefix
 
-        self.realms = func.parse(self.realms, "|")
-        self.languages = func.parse(self.languages, "|")
+        self.realms = u.parse(self.realms, "|")
+        self.languages = u.parse(self.languages, "|")
 
         self.clinical_studies = []
         self.configure()
-        self.filename = EnvironmentVariable("source_file", "string", permit_omission=False).value
-        self.do_copy = EnvironmentVariable("do_copy", "boolean", permit_omission=True).value
-        self.copy_to = EnvironmentVariable("copy_to", "string", permit_omission=True).value
+        self.filename = os.path.join(os.getcwd(), "resources", "source", "clinical studies index.xlsx")
         print("\n\nProcessing " + ", ".join(self.realms))
 
     def process(self):
         wb_obj = openpyxl.load_workbook(self.filename)
         sheet_obj = wb_obj.active
+        assert sheet_obj is not None
         row_count = sheet_obj.max_row
         if row_count > 1:
             for row_index in range(2, row_count + 1):
                 authors = sheet_obj.cell(row=row_index, column=1).value
                 title = sheet_obj.cell(row=row_index, column=2).value
                 url = sheet_obj.cell(row=row_index, column=3).value
-                _ = sheet_obj.cell(row=row_index, column=4).value
-                publication = sheet_obj.cell(row=row_index, column=5).value
-                subject = sheet_obj.cell(row=row_index, column=6).value
-                priority = sheet_obj.cell(row=row_index, column=7).value
-                language = sheet_obj.cell(row=row_index, column=8).value
-                year = func.convert_to_int(sheet_obj.cell(row=row_index, column=9).value)
+                publication = sheet_obj.cell(row=row_index, column=4).value
+                subject = sheet_obj.cell(row=row_index, column=5).value
+                value = sheet_obj.cell(row=row_index, column=6).value
+                priority = int(value) if isinstance(value, (int, float, str)) else 0
+                language = sheet_obj.cell(row=row_index, column=7).value
+                year = u.convert_to_int(sheet_obj.cell(row=row_index, column=8).value)
 
                 process_study = True
                 # Check realm
@@ -63,7 +60,6 @@ class Processor(object):
                 if process_study:
                     clinical_study = ClinicalStudy(authors, title, url, publication, subject, priority, language, year)
                     self.clinical_studies.append(clinical_study)
-                    print(" - " + clinical_study.title)
 
                 if len(self.clinical_studies) >= self.max:
                     break
@@ -78,6 +74,7 @@ class Processor(object):
         self.csv_folder = os.path.join(self.resources_folder, "csv")
 
     def export(self):
+        assert self.prefix is not None
         # Data
         json_data = []
         csv_data = '"Subject","Authors","Title,"URL","Publication"\n'
@@ -95,7 +92,7 @@ class Processor(object):
             csv_data += clinical_study.as_row()
             html_data += clinical_study.as_html()
 
-        html_data = "<div class='clinical_studies'><ol class='clinical_studies'>\n{list_items}</ol></div>".format(list_items=html_data)
+        html_data = f"<div class='clinical_studies'><ol class='clinical_studies'>\n{html_data}</ol></div>"
 
         # Save JSON
         with open(self.json_filename, "w") as file:
@@ -108,11 +105,3 @@ class Processor(object):
         # Save HTML
         with open(self.html_filename, "w") as file:
             file.write(html_data)
-
-        self.copy_json()
-
-    def copy_json(self):
-        if self.do_copy:
-            if "Neuropad" in self.realms:
-                if self.copy_to is not None:
-                    copyfile(self.json_filename, os.path.join(self.copy_to, self.json_file))

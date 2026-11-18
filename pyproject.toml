@@ -17,3 +17,30 @@ line-length = 180
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
+
+[tool.ruff.lint]
+per-file-ignores = { "**/*.py" = [
+    "BLE001",
+    "E741",
+    "I001",
+    "RUF010",
+    "RUF012",
+    "RUF059",
+    "PIE808",
+    "PLC0206",
+    "PLR0133",
+    "S110",
+    "SIM102",
+    "SIM115",
+    "UP004",
+    "UP007",
+  ]}
+
+[tool.ruff.lint.isort]
+known-first-party = ["core", "organisation", "test_sets", "users", "utils"]
+
+[tool.pyright]
+extraPaths = ["."]
+typeCheckingMode = "basic"
+reportMissingImports = "warning"
+reportMissingModuleSource = "warning"

@@ -1,0 +1,31 @@
+[
+    {
+        "subject": "Monofilament",
+        "authors": [
+            "Feng Y",
+            "Schl\u00f6sser",
+            "FJ",
+            "Sumpio",
+            "BE"
+        ],
+        "title": "The Semmes Weinstein monofilament examination is a significant predictor of the risk of foot ulceration and amputation in patients with diabetes mellitus",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/20692793/",
+        "publication": "J Vasc Surg. 2011 Jan;53(1):220-226.e1-5.",
+        "priority": 1,
+        "language": "English",
+        "year": 2011
+    },
+    {
+        "subject": "Monofilament",
+        "authors": [
+            "Mayfield A",
+            "Sugarman JR"
+        ],
+        "title": "The use of the Semmes-Weinstein monofilament and other threshold tests for preventing foot ulceration and amputation in persons with diabetes",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/11093555/",
+        "publication": "J Fam Pract. 2000 Nov;49(11 Suppl):S17-29.",
+        "priority": 1,
+        "language": "English",
+        "year": 2000
+    }
+]
