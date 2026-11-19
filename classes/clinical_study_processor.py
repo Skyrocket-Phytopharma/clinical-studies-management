@@ -1,29 +1,36 @@
-import os
 import json
 import openpyxl
+import os
 
 from classes.clinical_study import ClinicalStudy
 import utils.utils as u
 
 
-class Processor(object):
-    def __init__(self, realms=None, priority=None, languages=None, earliest=None, max=10, prefix=None):
-        self.realms: list[str] = realms or []
+class ClinicalStudyProcessor:
+    def __init__(self, themes=None, priority=None, languages=None, earliest=None, max=10, prefix=None):
+        self.themes: list[str] = themes or []
         self.priority: int | None = priority
         self.languages = languages
         self.earliest = earliest
         self.max = max
         self.prefix = prefix
 
-        self.realms = u.parse(self.realms, "|")
+        self.themes = u.parse(self.themes, "|")  # type: ignore
         self.languages = u.parse(self.languages, "|")
 
         self.clinical_studies = []
-        self.configure()
+        self.configure_folders()
         self.filename = os.path.join(os.getcwd(), "resources", "source", "clinical studies index.xlsx")
-        print("\n\nProcessing " + ", ".join(self.realms))
+        print("\n\nProcessing " + ", ".join(self.themes))
 
-    def process(self):
+    def configure_folders(self):
+        self.resources_folder = os.path.join(os.getcwd(), "resources")
+        self.source_folder = os.path.join(self.resources_folder, "source")
+        self.html_folder = os.path.join(self.resources_folder, "html")
+        self.json_folder = os.path.join(self.resources_folder, "json")
+        self.csv_folder = os.path.join(self.resources_folder, "csv")
+
+    def process_excel_source(self):
         wb_obj = openpyxl.load_workbook(self.filename)
         sheet_obj = wb_obj.active
         assert sheet_obj is not None
@@ -41,8 +48,8 @@ class Processor(object):
                 year = u.convert_to_int(sheet_obj.cell(row=row_index, column=8).value)
 
                 process_study = True
-                # Check realm
-                if self.realms is not None and subject not in (self.realms):
+                # Check theme
+                if self.themes is not None and subject not in (self.themes):
                     process_study = False
 
                 # Check priority
@@ -60,18 +67,14 @@ class Processor(object):
                 if process_study:
                     clinical_study = ClinicalStudy(authors, title, url, publication, subject, priority, language, year)
                     self.clinical_studies.append(clinical_study)
+                else:
+                    _ = 1
 
+                # print(len(self.clinical_studies))
                 if len(self.clinical_studies) >= self.max:
                     break
 
         self.clinical_studies.sort(key=lambda x: x.year, reverse=True)
-
-    def configure(self):
-        self.resources_folder = os.path.join(os.getcwd(), "resources")
-        self.source_folder = os.path.join(self.resources_folder, "source")
-        self.html_folder = os.path.join(self.resources_folder, "html")
-        self.json_folder = os.path.join(self.resources_folder, "json")
-        self.csv_folder = os.path.join(self.resources_folder, "csv")
 
     def export(self):
         assert self.prefix is not None

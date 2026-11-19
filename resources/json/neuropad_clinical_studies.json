@@ -2,29 +2,20 @@
     {
         "subject": "Neuropad",
         "authors": [
-            "Zografou",
-            "I.",
-            "Doukelis",
-            "P.",
-            "Koufakis",
-            "T.",
-            "Kotzakioulafi",
-            "E.",
-            "Evripidou",
-            "P.",
-            "Kontoninas",
-            "Z.",
-            "Savopoulos",
-            "C.",
-            "Doumas",
-            "M.",
-            "Didangelos",
-            "T. and Kantartzis",
-            "K."
+            "Zografou I.",
+            "Doukelis P.",
+            "Koufakis T.",
+            "Kotzakioulafi E.",
+            "Evripidou P.",
+            "Kontoninas Z.",
+            "Savopoulos C.",
+            "Doumas M.",
+            "Didangelos T.",
+            "Kantartzis K."
         ],
         "title": "High Diagnostic Performance of the Indicator Plaster Neuropad for the Detection of Established Diabetic Autonomic Neuropathy",
         "url": "https://doi.org/10.3390/diabetology6060055",
-        "publication": "Diabetology, 6(6), p. 55.",
+        "publication": "Diabetology, 2025; 6(6), p. 55.",
         "priority": 1,
         "language": "English",
         "year": 2025
@@ -43,7 +34,7 @@
         ],
         "title": "A New Quantitative Neuropad for Early Diagnosis of Diabetic Peripheral Neuropathy",
         "url": "https://doi.org/10.1002/dmrr.70010",
-        "publication": "Diabetes/Metabolism Research and Reviews, 40(8), e70010.",
+        "publication": "Diabetes/Metabolism Research and Reviews, 2024; 40(8), e70010.",
         "priority": 1,
         "language": "English",
         "year": 2024
@@ -68,7 +59,21 @@
     {
         "subject": "Neuropad",
         "authors": [
-            "Esther Chicharro-Lunaa E",
+            "Burgess J",
+            "Frank B",
+            "Marshall A et al."
+        ],
+        "title": "Early Detection of Diabetic Peripheral Neuropathy: A Focus on Small Nerve Fibres",
+        "url": "https://www.mdpi.com/2075-4418/11/2/165",
+        "publication": "Diagnostics 2021, 11, 165.",
+        "priority": 2,
+        "language": "English",
+        "year": 2021
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Esther Chicharro-Luna E",
             "Belen Ortega-Avila A",
             "Requena-Mart\u00edneza A",
             "Gijon Nogueron G"
@@ -83,30 +88,38 @@
     {
         "subject": "Neuropad",
         "authors": [
-            "Burgess",
-            "J.",
-            "Frank",
-            "B.",
-            "Marshall",
-            "A.",
-            "Khalil",
-            "R.S.",
-            "Ponirakis",
-            "G.",
-            "Petropoulos",
-            "I.N.",
-            "Cuthbertson",
-            "D.J.",
-            "Malik",
-            "R.A. and Alam",
-            "U."
+            "Burgess J.",
+            "Frank B.",
+            "Marshall A.",
+            "Khalil R.S.",
+            "Ponirakis G.",
+            "Petropoulos I.N.",
+            "Cuthbertson D.J.",
+            "Malik R.A.",
+            "Alam U."
         ],
         "title": "Early Detection of Diabetic Peripheral Neuropathy: A Focus on Small Nerve Fibres",
         "url": "https://doi.org/10.3390/diagnostics11020165",
-        "publication": "Diagnostics, 11(2), p. 165.",
+        "publication": "Diagnostics, 2021; 11(2), p. 165.",
         "priority": 1,
         "language": "English",
         "year": 2021
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Fern\u00e1ndez-Torres R",
+            "Ruiz-Mu\u00f1oz M",
+            "P\u00e9rez-Panero AJ",
+            "Garc\u00eda-Romero J",
+            "G\u00f3nzalez-S\u00e1nchez M."
+        ],
+        "title": "Instruments of Choice for Assessment and Monitoring Diabetic Foot",
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7074122/",
+        "publication": "A Systematic Review. J Clin Med. 2020 Feb 24;9(2):602.",
+        "priority": 2,
+        "language": "English",
+        "year": 2020
     },
     {
         "subject": "Neuropad",
@@ -140,6 +153,53 @@
     {
         "subject": "Neuropad",
         "authors": [
+            "Panagoulias GS",
+            "Eleftheriadou I",
+            "Papanas N",
+            "et al."
+        ],
+        "title": "Dryness of Foot Skin Assessed by the Visual Indicator Test and Risk of Diabetic Foot Ulceration: A Prospective Observational Study.",
+        "url": "https://www.frontiersin.org/articles/10.3389/fendo.2020.00625/full",
+        "publication": "Front. Endocrinol. Published online 08 September 2020",
+        "priority": 2,
+        "language": "English",
+        "year": 2020
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Sanz-Corbal\u00e1n I",
+            "L\u00e1zaro-Mart\u00ednez JL",
+            "Garc\u00eda-Morales E",
+            "et al."
+        ],
+        "title": "Advantages of early diagnosis of diabetic neuropathy in the prevention of diabetic foot ulcers.",
+        "url": "https://www.researchgate.net/publication/322080821_Advantages_of_early_diagnosis_of_diabetic_neuropathy_in_the_prevention_of_diabetic_foot_ulcers",
+        "publication": "Diabetes Res Clin Pract. 2018;146:148\u2013154.",
+        "priority": 2,
+        "language": "English",
+        "year": 2017
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Mendivil CO",
+            "Kattah W",
+            "Orduz A",
+            "Tique C",
+            "C\u00e1rdenas JL",
+            "Pati\u00f1o JE."
+        ],
+        "title": "Neuropad for the detection of cardiovascular autonomic neuropathy in patients with type 2 diabetes",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/26525688",
+        "publication": "J Diabetes Complications. 2015 Oct 14. pii: S1056-8727(15)00394-3.",
+        "priority": 2,
+        "language": "English",
+        "year": 2015
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
             "Ponirakis G",
             "Fadavi H",
             "Petropoulos IN",
@@ -166,6 +226,23 @@
     {
         "subject": "Neuropad",
         "authors": [
+            "Ishibashi F",
+            "Kojima R",
+            "Kawasaki A",
+            "Yamanaka E",
+            "Kosaka A",
+            "Uetake H."
+        ],
+        "title": "Correlation between sudomotor function, sweat gland duct size and corneal nerve fiber pathology in patients with type 2 diabetes mellitus.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/25411628",
+        "publication": "J Diabetes Investig. 2014 Sep;5(5):588-96",
+        "priority": 2,
+        "language": "English",
+        "year": 2014
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
             "Ponirakis G",
             "Petropoulos IN",
             "Fadavi H",
@@ -179,6 +256,19 @@
         "url": "http://www.ncbi.nlm.nih.gov/pubmed/24975286",
         "publication": "Diabet Med. 2014 Dec;31(12):1673-80.",
         "priority": 1,
+        "language": "English",
+        "year": 2014
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Papanas N",
+            "Ziegler D."
+        ],
+        "title": "New vistas in the diagnosis of diabetic polyneuropathy.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/24839196",
+        "publication": "Endocrine. 2014 Dec;47(3):690-8. Review.",
+        "priority": 2,
         "language": "English",
         "year": 2014
     },
@@ -223,6 +313,39 @@
     {
         "subject": "Neuropad",
         "authors": [
+            "Tome\u0161ov\u00e1 J",
+            "Gruberova J",
+            "Lacigova S",
+            "Cechurova D",
+            "Jankovec Z",
+            "Rusavy Z."
+        ],
+        "title": "Differences in skin microcirculation on the upper and lower extremities in patients with diabetes mellitus: relationship of diabetic neuropathy and skin microcirculation.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/23964895",
+        "publication": "Diabetes Technol Ther. 2013 Nov;15(11):968-75.",
+        "priority": 2,
+        "language": "English",
+        "year": 2013
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Karachristianou S",
+            "Papamichalis E",
+            "Sarantopoulos A",
+            "Boura P",
+            "Georgiadis G."
+        ],
+        "title": "Hypohidrosis induced by topiramate in an adult patient.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/23773932",
+        "publication": "Epileptic Disord. 2013 Jun;15(2):203-6.",
+        "priority": 2,
+        "language": "English",
+        "year": 2013
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
             "Aubert CE",
             "Le Doeuff J",
             "Lajou J",
@@ -262,6 +385,23 @@
     {
         "subject": "Neuropad",
         "authors": [
+            "Sanz-Corbal\u00e1n I",
+            "L\u00e1zaro-Mart\u00ednez JL",
+            "Garc\u00eda-Morales E",
+            "Arag\u00f3n-S\u00e1nchez J",
+            "Carabantes-Alarc\u00f3n D",
+            "Garc\u00eda-\u00c1lvarez Y."
+        ],
+        "title": "Relationship of limited joint mobility and foot deformities with neurological examination in patients with diabetes.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/23329582",
+        "publication": "Exp Clin Endocrinol Diabetes. 2013 Apr;121(4):239-43.",
+        "priority": 2,
+        "language": "English",
+        "year": 2013
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
             "Yoshioka K",
             "Okada H."
         ],
@@ -292,6 +432,23 @@
     {
         "subject": "Neuropad",
         "authors": [
+            "Pritchard N",
+            "Edwards K",
+            "Vagenas D",
+            "Russell AW",
+            "Malik RA",
+            "Efron N."
+        ],
+        "title": "Corneal sensitivity is related to established measures of diabetic peripheral neuropathy.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/22489841",
+        "publication": "Clin Exp Optom. 2012 May;95(3):355-61.",
+        "priority": 2,
+        "language": "English",
+        "year": 2012
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
             "Datema M",
             "Gert van Dijk J",
             "Hoitsma E."
@@ -302,6 +459,26 @@
         "priority": 1,
         "language": "English",
         "year": 2012
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Papanas N",
+            "Demetriou M",
+            "Katsiki N",
+            "Papatheodorou K",
+            "Papazoglou D",
+            "Gioka T",
+            "Kotsiou S",
+            "Maltezos E",
+            "Mikhailidis DP."
+        ],
+        "title": "Increased serum levels of uric acid are associated with sudomotor dysfunction in subjects with type 2 diabetes mellitus.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/21941527",
+        "publication": "Exp Diabetes Res. 2011;2011:346051.",
+        "priority": 2,
+        "language": "English",
+        "year": 2011
     },
     {
         "subject": "Neuropad",
@@ -338,6 +515,20 @@
     {
         "subject": "Neuropad",
         "authors": [
+            "Argiana V",
+            "Eleftheriadou I",
+            "Tentolouris N."
+        ],
+        "title": "Screening for the high-risk foot of ulceration: tests of somatic and autonomic nerve function.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/21494779",
+        "publication": "Curr Diab Rep. 2011 Aug;11(4):294-301.Review.",
+        "priority": 2,
+        "language": "English",
+        "year": 2011
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
             "Papanas N",
             "Papatheodorou K",
             "Papazoglou D",
@@ -350,6 +541,35 @@
         "priority": 1,
         "language": "English",
         "year": 2011
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Papanas N",
+            "Ziegler D. J"
+        ],
+        "title": "New diagnostic tests for diabetic distal symmetric polyneuropathy.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/19896871",
+        "publication": "Diabetes Complications. 2011 Jan-Feb;25(1):44-51.",
+        "priority": 3,
+        "language": "English",
+        "year": 2011
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Papanas N",
+            "Papatheodorou K",
+            "Papazoglou D",
+            "Kotsiou S",
+            "Maltezos E."
+        ],
+        "title": "A prospective study on the use of the indicator test Neuropad for the early diagnosis of peripheral neuropathy in type 2 diabetes.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/20663441",
+        "publication": "Diabetes Sci Technol. 2010 Jul 1;4(4):803-7.",
+        "priority": 3,
+        "language": "English",
+        "year": 2010
     },
     {
         "subject": "Neuropad",
@@ -383,5 +603,193 @@
         "priority": 1,
         "language": "English",
         "year": 2010
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Spallone V",
+            "Morganti R",
+            "Siampli M",
+            "Fedele T",
+            "D\u2019Amato C",
+            "Cacciotti L",
+            "Maiello MR."
+        ],
+        "title": "Neuropad as a diagnostic tool for diabetic autonomic and sensorimotor neuropathy.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/19573117",
+        "publication": "Diabet Med. 2009 Jul;26(7):686-92.",
+        "priority": 1,
+        "language": "English",
+        "year": 2009
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Quattrini C",
+            "Jeziorska M",
+            "Tavakoli M",
+            "Begum P",
+            "Boulton AJ",
+            "Malik RA."
+        ],
+        "title": "The Neuropad test: a visual indicator test for human diabetic neuropathy.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/18368386",
+        "publication": "Diabetologia. 2008 Jun;51(6):1046-50.",
+        "priority": 1,
+        "language": "English",
+        "year": 2008
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Papanas N",
+            "Papatheodorou K",
+            "Papazoglou D",
+            "Monastiriotis C",
+            "Christakidis D",
+            "Maltezos E."
+        ],
+        "title": "A comparison of the new indicator test for sudomotor function (Neuropad) with the vibration perception threshold and the clinical examination in the diagnosis of peripheral neuropathy in subjects with type 2 diabetes.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/18095233",
+        "publication": "Exp Clin Endocrinol Diabetes. 2008 Feb;116(2):135-8.",
+        "priority": 1,
+        "language": "English",
+        "year": 2008
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Tentolouris N",
+            "Achtsidis V",
+            "Marinou K",
+            "Katsilambros N."
+        ],
+        "title": "Evaluation of the self-administered indicator plaster Neuropad for the diagnosis of neuropathy in diabetes.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/18025406",
+        "publication": "Diabetes Care. 2008 Feb;31(2):236-7.",
+        "priority": 1,
+        "language": "English",
+        "year": 2008
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Bilen H",
+            "Atmaca A",
+            "Akcay G."
+        ],
+        "title": "Neuropad indicator test for diagnosis of sudomotor dysfunction in type 2 diabetes.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/18029328",
+        "publication": "Adv Ther. 2007 Sep-Oct;24(5):1020-7.",
+        "priority": 1,
+        "language": "English",
+        "year": 2007
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Papanas N",
+            "Giassakis G",
+            "Papatheodorou K",
+            "Papazoglou D",
+            "Monastiriotis C",
+            "Christakidis D",
+            "Piperidou H",
+            "Maltezos E. J."
+        ],
+        "title": "Sensitivity and specificity of a new indicator test (Neuropad) for the diagnosis of peripheral neuropathy in type 2 diabetes patients: a comparison with clinical examination and nerve conduction study.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/17967706",
+        "publication": "Diabetes Complications. 2007 Nov-Dec;21(6):353-8.",
+        "priority": 1,
+        "language": "English",
+        "year": 2007
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Eckhard M",
+            "Lengler A",
+            "Liersch J",
+            "Bretzel RG",
+            "Mayser P."
+        ],
+        "title": "Fungal foot infections in patients with diabetes mellitus\u2013results of two independent investigations.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/17681049",
+        "publication": "Mycoses. 2007;50 Suppl 2:14-9.",
+        "priority": 3,
+        "language": "English",
+        "year": 2007
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Papanas N",
+            "Papatheodorou K",
+            "Papazoglou D",
+            "Christakidis D",
+            "Monastiriotis C",
+            "Maltezos E."
+        ],
+        "title": "The new indicator test (Neuropad): a valuable diagnostic tool for small-fiber impairment in patients with type 2 diabetes.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/17426301",
+        "publication": "Diabetes Educ. 2007 Mar-Apr;33(2):257-8, 260, 262 passim.",
+        "priority": 1,
+        "language": "English",
+        "year": 2007
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Papanas N",
+            "Giassakis G",
+            "Papatheodorou K",
+            "Papazoglou D",
+            "Monastiriotis C",
+            "Christakidis D",
+            "Piperidou H",
+            "Maltezos E."
+        ],
+        "title": "Use of the new indicator test (Neuropad) for the assessment of the staged severity of neuropathy in type 2 diabetic patients.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/17286238",
+        "publication": "Exp Clin Endocrinol Diabetes. 2007 Jan;115(1):58-61.",
+        "priority": 1,
+        "language": "English",
+        "year": 2007
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Papanas N",
+            "Papatheodorou K",
+            "Papazoglou D",
+            "Christakidis D",
+            "Monastiriotis C",
+            "Maltezos E."
+        ],
+        "title": "Reproducibility of the new indicator test for sudomotor function (Neuropad) in patients with type 2 diabetes mellitus: short communication.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/16320155",
+        "publication": "Exp Clin Endocrinol Diabetes. 2005 Dec;113(10):577-81.",
+        "priority": 1,
+        "language": "English",
+        "year": 2005
+    },
+    {
+        "subject": "Neuropad",
+        "authors": [
+            "Papanas N",
+            "Papatheodorou K",
+            "Christakidis D",
+            "Papazoglou D",
+            "Giassakis G",
+            "Piperidou H",
+            "Monastiriotis C",
+            "Maltezos E."
+        ],
+        "title": "Evaluation of a new indicator test for sudomotor function (Neuropad) in the diagnosis of peripheral neuropathy in type 2 diabetic patients.",
+        "url": "http://www.ncbi.nlm.nih.gov/pubmed/15891953",
+        "publication": "Exp Clin Endocrinol Diabetes. 2005 Apr;113(4):195-8.",
+        "priority": 1,
+        "language": "English",
+        "year": 2005
     }
 ]

@@ -1,29 +1,26 @@
-from classes.processor import Processor
+from classes.clinical_study_processor import ClinicalStudyProcessor
 
-
-neuropad_args = ("Neuropad", 11, "", 1914)
-monofilament_args = ("Neuropad", 11, "", 1914)
 
 # Neuropad
-processor = Processor(
-    realms="Neuropad",
-    priority=1,
+clinical_study_processor = ClinicalStudyProcessor(
+    themes="Neuropad",
+    priority=10,
     languages="English",
-    earliest=2010,
-    max=160,
+    earliest=2000,
+    max=999,
     prefix="neuropad",
 )
-processor.process()
-processor.export()
+clinical_study_processor.process_excel_source()
+clinical_study_processor.export()
 
 # Monofilament
-processor = Processor(
-    realms="Monofilament",
+clinical_study_processor = ClinicalStudyProcessor(
+    themes="Monofilament",
     priority=10,
     languages="",
-    earliest=1914,
-    max=100,
+    earliest=2000,
+    max=999,
     prefix="monofilament",
 )
-processor.process()
-processor.export()
+clinical_study_processor.process_excel_source()
+clinical_study_processor.export()
