@@ -288,3 +288,11 @@ resources/html
 # resources/json
 
 resources/source/archive/
+
+
+
+# Microsoft Office temporary/owner files
+~$*
+
+# Other temporary files beginning with a tilde
+~*
